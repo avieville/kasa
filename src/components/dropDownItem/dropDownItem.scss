@@ -1,0 +1,17 @@
+.dropdownitem{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+    background-color: #FF6060;
+    border-radius: 5px;
+    height: 52px;
+    margin-bottom: 30px;
+    p{
+        color: white;
+    }
+    img{
+        position: relative;
+        bottom:3px;
+    }
+}

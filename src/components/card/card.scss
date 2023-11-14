@@ -1,0 +1,15 @@
+.card{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(#FF6060, rgba(0,0,0,0.25));
+    p{
+        position:absolute;
+        left: 20px;
+        bottom:20px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
