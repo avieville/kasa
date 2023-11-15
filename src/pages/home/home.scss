@@ -2,15 +2,13 @@
   width: 100%;
   padding: 0 100px;
 
-  &__card-container{
-    padding : 95px 150px;
+  &__card-container {
+    padding: 95px 150px;
     display: grid;
     justify-content: center;
     grid-template-columns: 340px 340px 340px;
     grid-template-rows: 340px 340px;
     column-gap: 50px;
     row-gap: 60px;
-
   }
-  
 }

@@ -1,27 +1,24 @@
-.navbar{
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 100px 50px 100px;
+
+  ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 45px 100px 50px 100px;
-    
-    ul{
-        display: flex;
-        list-style: none;   
-    }
+    list-style: none;
+  }
 
-    li{
-        margin-left: 67px;
-    }
+  li {
+    margin-left: 67px;
+  }
 
-    a{
-        font-size: 24px;
-        color: #FF6060; 
-        text-decoration: none;
-        &.active{
-            text-decoration: underline;
-        }
-    } 
+  a {
+    font-size: 24px;
+    color: #ff6060;
+    text-decoration: none;
+    &.active {
+      text-decoration: underline;
+    }
+  }
 }
-
-
-
