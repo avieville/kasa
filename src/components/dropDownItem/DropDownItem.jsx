@@ -4,24 +4,23 @@ import { useState } from "react";
 
 export default function DropDownItem(props) {
   const [open, setOpen] = useState(false);
-  const { title, message } = props;
+  const { title, children } = props;
 
-  function handleOpen() {
+  function handleToggle() {
     setOpen(!open);
   }
 
   return (
     <>
       <div className="dropdownitem">
-        <div className="dropdownitem__header">
-          <p>{title}</p>
+        <div className="dropdownitem__header" onClick={() => handleToggle()} >
+          <h2>{title}</h2>
           <img
-            src={open ? arrowDown : arrowUp}
-            onClick={() => handleOpen()}
+            src={open ? arrowDown : arrowUp}       
             alt="arrow"
           />
         </div>
-        {open && <p className="dropdownitem__message">{message}</p>}
+        {open && <div className="dropdownitem__message">{children}</div>}
       </div>
     </>
   );

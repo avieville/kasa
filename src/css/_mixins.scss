@@ -1,0 +1,46 @@
+// MEDIA QUERIES
+@mixin for-phone-only {
+  @media (max-width: $breakpoint-big-phone) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (max-width: $breakpoint-big-tablet) {
+    @content;
+  }
+}
+
+@mixin for-laptop-only {
+  @media (max-width: $breakpoint-big-laptop) {
+    @content;
+  }
+}
+
+@mixin for-desktop-only {
+  @media (max-width: $breakpoint-big-desktop) {
+    @content;
+  }
+}
+
+@mixin for-min-width($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin for-max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+/*  using example
+
+@include for-phone-only {
+body {
+color:red;
+}
+}
+
+*/

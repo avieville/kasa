@@ -6,11 +6,12 @@
 
   ul {
     display: flex;
+    gap: 0 67px;
     list-style: none;
   }
 
   li {
-    margin-left: 67px;
+    text-wrap: nowrap;
   }
 
   a {
@@ -21,4 +22,25 @@
       text-decoration: underline;
     }
   }
+
+  @include for-tablet-only {
+
+    padding: 20px 20px 27px 20px;
+
+    ul{
+      gap: 0 26px;
+      
+    }
+
+    a{
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .logo {
+      width: 145px;
+      height: 47px;
+      
+    }
+  }
+
 }

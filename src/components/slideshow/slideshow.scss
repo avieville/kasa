@@ -1,0 +1,39 @@
+.slideshow {
+  height: 415px;
+  position: relative;
+  overflow: hidden;
+
+  &__pictures-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+    &__picture {
+      flex: 1 0 100%;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+  }
+  &__arrowPrev {
+    left: 0;
+  }
+  &__arrowNext {
+    right: 0;
+  }
+  &__pagination {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    z-index: 100;
+  }
+}

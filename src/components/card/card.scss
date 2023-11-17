@@ -13,4 +13,12 @@
     height: 340px;
     border-radius: 10px;
   }
+
+  @include for-tablet-only {
+    img {
+      width: 335px;
+      height: 255px;
+    }
+    
+  }
 }

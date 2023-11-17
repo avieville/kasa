@@ -1,17 +1,22 @@
-@import './main.scss';
+@import "./main.scss";
 
-// components 
-@import '../components/navbar/navbar.scss';
-@import '../components/footer/footer.scss';
-@import '../components/card/card.scss';
-@import '../components/banner/banner.scss';
-@import '../components/dropDownItem/dropDownItem.scss';
+//Breakpoints
+@import "../css/variables.scss";
+@import "../css/mixins.scss";
+
+// components
+@import "../components/navbar/navbar.scss";
+@import "../components/footer/footer.scss";
+@import "../components/card/card.scss";
+@import "../components/banner/banner.scss";
+@import "../components/dropDownItem/dropDownItem.scss";
+@import "../components/slideshow/slideshow.scss";
 
 //pages
-@import '../pages/home/home.scss';
-@import '../pages/about/about.scss';
-@import '../pages/locationdetails/locationdetails.scss';
-@import '../pages/notfound/notfound.scss';
+@import "../pages/home/home.scss";
+@import "../pages/about/about.scss";
+@import "../pages/locationdetails/locationdetails.scss";
+@import "../pages/notfound/notfound.scss";
 
 // font
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
