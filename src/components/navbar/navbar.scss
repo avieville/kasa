@@ -16,7 +16,7 @@
 
   a {
     font-size: 24px;
-    color: #ff6060;
+    color: $main-color;
     text-decoration: none;
     &.active {
       text-decoration: underline;
@@ -24,23 +24,25 @@
   }
 
   @include for-tablet-only {
-
     padding: 20px 20px 27px 20px;
 
-    ul{
+    ul {
       gap: 0 26px;
-      
     }
 
-    a{
+    a {
       font-size: 12px;
       text-transform: uppercase;
     }
     .logo {
       width: 145px;
       height: 47px;
-      
     }
   }
 
+  @include for-max-width($breakpoint-small-phone) {
+    ul {
+      padding: 0 5px;
+    }
+  }
 }

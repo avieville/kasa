@@ -15,10 +15,10 @@ export default function About() {
       <Banner imageLink={bannerImage} />
 
       <div className="dropdown-items-container">
-        <DropDownItem title="Fiabilité"  >{fiablityMessage}</DropDownItem>
-        <DropDownItem title="Respect" >{respectOrServiceMessage}</DropDownItem>
-        <DropDownItem title="Service" >{respectOrServiceMessage}</DropDownItem>
-        <DropDownItem title="Sécurité" >{securityMessage}</DropDownItem>
+        <DropDownItem title="Fiabilité">{fiablityMessage}</DropDownItem>
+        <DropDownItem title="Respect">{respectOrServiceMessage}</DropDownItem>
+        <DropDownItem title="Service">{respectOrServiceMessage}</DropDownItem>
+        <DropDownItem title="Sécurité">{securityMessage}</DropDownItem>
       </div>
     </div>
   );

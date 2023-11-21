@@ -1,69 +1,126 @@
-.locationdetails{
-    margin:0 100px;
-    
+.locationdetails {
+  margin: 0 100px;
 
-    .detailsContainer{
+  .detailsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    h1 {
+      font-weight: 500;
+      font-size: 36px;
+      color: $main-color;
+    }
+    .destination {
+      font-weight: 500;
+      font-size: 18px;
+      color: $main-color;
+    }
+    .tags {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0 24px 0;
+      .tag {
+        color: white;
+        background-color: $main-color;
+        font-size: 14px;
+        height: 25px;
+        padding: 3px 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+      }
+    }
+    .host {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 21px;
+      width: 167px;
+      height: 64px;
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        color: $main-color;
+      }
+      img {
+        border-radius: 100%;
+        height: 64px;
+        width: 64px;
+      }
+    }
+    .stars {
+      display: flex;
+      gap: 4;
+    }
+  }
+
+  .description-and-equipments {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+    margin-bottom: 50px;
+    li {
+      list-style-type: none;
+    }
+  }
+
+  @include for-tablet-only {
+    margin: 0 20px;
+
+    .detailsContainer {
+      margin-top: 15px;
+      flex-direction: column;
+      h1 {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      .destination {
+        font-size: 14px;
+      }
+
+      .tags {
+        margin: 10px 0 16px 0;
+        .tag {
+          font-size: 10px;
+          height: 18px;
+        }
+      }
+
+      .hostAndStars {
         display: flex;
         justify-content: space-between;
-        margin-top: 30px;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 33px;
+        margin-bottom: 13px;
+        .stars {
+          height: 18px;
+          width: 18px;
+        }
+        .host {
+          margin: 0;
+          width: 135px;
+          height: 33px;
 
-        h1{
-            font-weight: 500;
-            font-size: 36px;
-            color: #FF6060;
+          p {
+            font-size: 12px;
+          }
+          img {
+            border-radius: 100%;
+            height: 32px;
+            width: 32px;
+          }
         }
-        .destination{
-            font-weight: 500;
-            font-size:18px;
-            color:#FF6060;
-        }
-        .tags{
-            display: flex;
-            gap: 10px;
-            margin: 20px 0 24px 0;
-            .tag{
-                color: white;
-                background-color: #FF6060;
-                font-size: 14px;
-                height: 25px;
-                padding: 3px 22px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 10px;
-            }
-        }
-        .host{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 21px;
-            width: 167px;
-            height: 64px;
-            p{
-                font-size: 18px;
-                font-weight: 500;
-                color:#FF6060;
-            }
-            img{
-                border-radius: 100%;
-                height: 64px;
-                width: 64px;
-               
-            }
-        }
-        .stars{
-            display: flex;
-            gap:4;
-        }
+      }
     }
 
-    .description-and-equipments{
-        display: flex;
-        justify-content: space-between;
-        gap: 76px;  
+    .description-and-equipments {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 27px;
     }
-    ul{
-        list-style-type: none;
-    }
+  }
 }

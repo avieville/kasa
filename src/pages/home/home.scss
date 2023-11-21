@@ -1,5 +1,4 @@
 .home {
-  width: 100%;
   padding: 0 100px;
 
   &__card-container {
@@ -10,7 +9,6 @@
     flex-wrap: wrap;
     column-gap: 60px;
     row-gap: 50px;
-
     background-color: #f6f6f6;
     border-radius: 25px;
   }

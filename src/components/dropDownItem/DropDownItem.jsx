@@ -13,12 +13,9 @@ export default function DropDownItem(props) {
   return (
     <>
       <div className="dropdownitem">
-        <div className="dropdownitem__header" onClick={() => handleToggle()} >
+        <div className="dropdownitem__header" onClick={() => handleToggle()}>
           <h2>{title}</h2>
-          <img
-            src={open ? arrowDown : arrowUp}       
-            alt="arrow"
-          />
+          <img src={open ? arrowDown : arrowUp} alt="arrow" />
         </div>
         {open && <div className="dropdownitem__message">{children}</div>}
       </div>

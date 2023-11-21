@@ -1,15 +1,13 @@
 .banner {
-  height: 223px;
   position: relative;
-  background: #000000;
+  height: 223px;
   border-radius: 25px;
 
   img {
-    position: relative;
     width: 100%;
-    height: 223px;
+    height: 100%;
     border-radius: 25px;
-    opacity: 0.7;
+    filter: brightness(0.7);
   }
 
   h1 {
@@ -17,7 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 333;
+    z-index: 777;
     font-size: 48px;
     font-weight: 500;
     color: white;
@@ -27,15 +25,13 @@
   @include for-tablet-only {
     height: 111px;
 
-    img{
+    img {
       height: 111px;
     }
 
-    h1{
+    h1 {
       font-size: 24px;
-      text-align:start;
-      
+      text-align: start;
     }
-    
   }
 }

@@ -32,7 +32,7 @@ export default function LocationDetails() {
               </div>
             </div>
 
-            <div>
+            <div className="hostAndStars">
               <div className="host">
                 <p>{location.host.name}</p>
                 <img src={location.host.picture} alt="personne" />

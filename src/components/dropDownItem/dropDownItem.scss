@@ -1,6 +1,5 @@
 .dropdownitem {
-  margin-bottom: 30px;
-  color: #ff6060;
+  color: $main-color;
   width: 100%;
 
   &__header {
@@ -8,7 +7,7 @@
     justify-content: space-between;
     padding: 10px 20px 10px 10px;
     align-items: center;
-    background-color: #ff6060;
+    background-color: $main-color;
     border-radius: 5px;
     height: 52px;
     cursor: pointer;
@@ -31,5 +30,24 @@
   img {
     position: relative;
     bottom: 3px;
+  }
+
+  @include for-tablet-only {
+    color: $main-color;
+    width: 100%;
+
+    &__header {
+      padding: 10px 12px 10px 10px;
+      height: 30px;
+      h2 {
+        font-size: 13px;
+      }
+    }
+
+    &__message {
+      padding: 15px;
+
+      font-size: 13px;
+    }
   }
 }
