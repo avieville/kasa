@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/details/:id" element={<LocationDetails />} />
         <Route path="/about" element={<About />} />
+        <Route path="/notfound" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

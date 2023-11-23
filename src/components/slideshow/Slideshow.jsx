@@ -25,21 +25,27 @@ export default function Slideshow(props) {
         />
       </div>
 
-      <img
-        className="slideshow__arrow slideshow__arrowPrev"
-        src={arrowPrev}
-        alt="arrow"
-        onClick={() => showPreviousImage()}
-      />
-      <img
-        className="slideshow__arrow slideshow__arrowNext"
-        src={arrowNext}
-        alt="arrow"
-        onClick={() => showNextImage()}
-      />
-      <p className="slideshow__pagination">{`${index + 1}/${
-        pictures.length
-      }`}</p>
+      {pictures.length > 1 && (
+        <>
+          <img
+            className="slideshow__arrow slideshow__arrowPrev"
+            src={arrowPrev}
+            alt="arrow"
+            onClick={() => showPreviousImage()}
+          />
+
+          <img
+            className="slideshow__arrow slideshow__arrowNext"
+            src={arrowNext}
+            alt="arrow"
+            onClick={() => showNextImage()}
+          />
+
+          <p className="slideshow__pagination">
+            {`${index + 1}/${pictures.length}`}
+          </p>
+        </>
+      )}
     </div>
   );
 }

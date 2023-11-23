@@ -14,7 +14,7 @@ export default function LocationDetails() {
   return (
     <div className="locationdetails">
       {!location ? (
-        <Navigate to="/" replace={true} />
+        <Navigate to="/notfound" replace={true} />
       ) : (
         <>
           <Slideshow pictures={location.pictures} />

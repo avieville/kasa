@@ -5,21 +5,43 @@
     margin-top: 43px;
     padding: 55px 50px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 60px;
     row-gap: 50px;
     background-color: #f6f6f6;
     border-radius: 25px;
+  
   }
+
 
   @include for-tablet-only {
     padding: 0 20px;
     &__card-container {
       background-color: white;
       margin-top: 0;
-      padding-top: 22px;
-      row-gap: 22px;
+      padding: 22px 0 27px 0;
+      row-gap: 20px;
+    }
+  }
+
+  @media (max-width: 1860px) {
+    &__card-container {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__card-container {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 1060px) {
+    &__card-container {
+      a {
+        width: 100%;
+      }
     }
   }
 }
