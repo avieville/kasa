@@ -1,6 +1,6 @@
 import Banner from "../../components/banner/Banner";
 import bannerImage from "../../assets/image-banner-about.png";
-import DropDownItem from "../../components/dropDownItem/DropDownItem";
+import DropDown from "../../components/dropDown/Dropdown";
 
 export default function About() {
   const fiablityMessage =
@@ -15,10 +15,10 @@ export default function About() {
       <Banner imageLink={bannerImage} />
 
       <div className="dropdown-items-container">
-        <DropDownItem title="Fiabilité">{fiablityMessage}</DropDownItem>
-        <DropDownItem title="Respect">{respectOrServiceMessage}</DropDownItem>
-        <DropDownItem title="Service">{respectOrServiceMessage}</DropDownItem>
-        <DropDownItem title="Sécurité">{securityMessage}</DropDownItem>
+        <DropDown title="Fiabilité">{fiablityMessage}</DropDown>
+        <DropDown title="Respect">{respectOrServiceMessage}</DropDown>
+        <DropDown title="Service">{respectOrServiceMessage}</DropDown>
+        <DropDown title="Sécurité">{securityMessage}</DropDown>
       </div>
     </div>
   );

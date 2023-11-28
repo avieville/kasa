@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import LocationListContext from "../../contexts/locationListContext";
 import Slideshow from "../../components/slideshow/Slideshow";
 import { Stars } from "../../components/stars/Stars";
-import DropDownItem from "../../components/dropDownItem/DropDownItem";
+import DropDown from "../../components/dropDown/Dropdown";
 import { Navigate } from "react-router-dom";
 
 export default function LocationDetails() {
@@ -45,16 +45,16 @@ export default function LocationDetails() {
           </div>
 
           <div className="description-and-equipments">
-            <DropDownItem title="Description">
+            <DropDown title="Description">
               {location.description}
-            </DropDownItem>
-            <DropDownItem title="Équipements">
+            </DropDown>
+            <DropDown title="Équipements">
               <ul>
                 {location.equipments.map((equipment, id) => (
                   <li key={id}>{equipment}</li>
                 ))}
               </ul>
-            </DropDownItem>
+            </DropDown>
           </div>
         </>
       )}
