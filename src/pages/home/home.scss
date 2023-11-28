@@ -4,16 +4,14 @@
   &__card-container {
     margin-top: 43px;
     padding: 55px 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 60px;
-    row-gap: 50px;
     background-color: #f6f6f6;
     border-radius: 25px;
-  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, auto));
+    justify-content: space-between;
+    column-gap: 60px;
+    row-gap: 50px;
   }
-
 
   @include for-tablet-only {
     padding: 0 20px;
@@ -22,12 +20,6 @@
       margin-top: 0;
       padding: 22px 0 27px 0;
       row-gap: 20px;
-    }
-  }
-
-  @media (max-width: 1860px) {
-    &__card-container {
-      justify-content: flex-start;
     }
   }
 

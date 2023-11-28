@@ -15,26 +15,22 @@
   }
 
   @media (max-width: 1060px) {
-    width: 100%;
-
     img {
       width: 100%;
-      
     }
-
   }
 
-  @include for-tablet-only {
+  @media (max-width: 400px) {
     img {
-      width: 100%;
+      width: 335px;
       height: 255px;
     }
   }
 
-  @include for-max-width($breakpoint-small-phone) {
+  @media (max-width: 360px) {
     img {
       width: 100%;
-      height: 255px;
+      height: 200px;
     }
   }
 }
