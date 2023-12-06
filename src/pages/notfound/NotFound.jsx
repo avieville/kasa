@@ -7,9 +7,10 @@ export default function NotFound() {
       <p className="notfound__message">
         Oups! La page que vous demandez n'existe pas.
       </p>
-      <NavLink className="notfound__link" to="">
+      <NavLink className="notfound__link" to="/">
         Retourner sur la page d’accueil
       </NavLink>
     </div>
+    
   );
 }
